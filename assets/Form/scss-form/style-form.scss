@@ -1,0 +1,106 @@
+// Variabili
+$bg-body: #000;
+$bg-form: #111;
+$bg-input: #222;
+$bg-input-focus: #333;
+$btn-color: #0062ca;
+$btn-hover: #005bb5;
+$text-color: #fff;
+$placeholder-color: #aaa;
+$shadow-color: rgba(255, 255, 255, 0.1);
+
+// Mixins
+@mixin transition($props: all, $duration: 0.3s, $ease: ease) {
+  transition: $props $duration $ease;
+}
+
+// Body
+body {
+  background-color: $bg-body;
+  color: $text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  @include transition;
+}
+
+.logo {
+  position: absolute;
+  top: 10px; /* posizionato in alto */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 20px;
+  z-index: 100;
+}
+
+.logo img {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+.logo img:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
+
+// Form
+.contact-form {
+  background-color: $bg-form;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px $shadow-color;
+  width: 100%;
+  max-width: 500px;
+  @include transition(transform);
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .form-control {
+    border-radius: 50px !important;
+    background-color: $bg-input;
+    border: none;
+    color: $text-color;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    @include transition;
+
+    &::placeholder {
+      color: $placeholder-color;
+      @include transition(color);
+    }
+
+    &:focus {
+      background-color: $bg-input-focus;
+      outline: none;
+      box-shadow: 0 0 10px $btn-color;
+      color: $text-color;
+    }
+  }
+
+  .btn-submit {
+    border-radius: 50px;
+    padding: 12px 30px;
+    background-color: $btn-color;
+    border: none;
+    color: $text-color;
+    font-weight: bold;
+    @include transition;
+
+    &:hover {
+      background-color: $btn-hover;
+      transform: scale(1.05);
+    }
+  }
+}
+
