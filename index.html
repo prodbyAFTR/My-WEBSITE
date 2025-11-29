@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website - Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/jpg" href="assets/img/favicon.jpg">
+  </head>
+  <body>
+    
+    <!-- Menù navigazione -->
+    <header class="header">
+
+      <!-- Logo (centro) -->
+      <a href="index.html" class="logo">
+        <img src="assets/img/favicon.jpg" alt="Logo">
+      </a>
+
+      <!-- Menù a tendina-->
+      <input class="menu-btn" id="menu-btn" type="checkbox">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+      <ul class="menu">
+        <li><a href="assets/Portfolio/portfolio.html">Portfolio</a></li>
+        <li><a href="#cv-section">CV</a></li>
+        <li><a href="#bio-section">Bio</a></li>
+        <li><a href="assets/Form/form.html">Contattami</a></li>
+      </ul>
+    </header>
+
+      <!-- Hero: titolo e btn form -->
+      <section class="hero">
+        <h1 class="titolo">Elevate <br> More</h1>
+        <button type="button" class="btn-btn-primary-btn-lg"><a href="assets/Form/form.html"> CONTATTAMI </a></button>
+      </section>
+
+   <!-- Sezione Bio -->
+      <section id="bio-section" class="bio-section">
+        <div class="bio-container">
+          <img src="assets/img/photobio.jpg" alt="foto di Federico" class="bio-photo">
+          <div class="bio-text">
+            <h1>Ciao Amici 🙋🏻‍♂️<br> Sono Federico Marogna!</h1><br>
+            <p>Progetto siti essenziali, veloci e curati nei dettagli. Trasformo idee in esperienze digitali pulite, moderne e facili da usare.</p>
+            <button type="button" class="bio-button" onclick="location.href='assets/Portfolio/portfolio.html'">SCOPRI DI +</button>
+          </div>
+        </div>
+      </section>
+
+    <!-- Sezione CV -->
+      <section id="cv-section" class="cv-section">
+        <div class="cv-container">
+          <div class="cv-grid">
+            <div class="cv-card">
+              <h2>Esperienza Attuale</h2>
+              <p class="job-title">Tecnico Commerciale</p>
+              <ul>
+                <li>Gestione completa del ciclo di vendita</li>
+                <li>Elaborazione ordini e preventivi</li>
+                <li>Aggiornamento sito web e attività marketing</li>
+                <li>Gestione documentazione di produzione</li>
+                <li>Supporto in fiere ed eventi</li>
+              </ul>
+            </div>
+            <div class="cv-card">
+              <h2>Competenze Tecniche</h2>
+              <ul>
+                <li>HTML / CSS / Web Design</li>
+                <li>Editing foto e video</li>
+                <li>Pacchetto Office</li>
+                <li>Gestione email</li>
+                <li>Social Media</li>
+              </ul>
+            </div>
+            <div class="cv-card">
+              <h2>Formazione</h2>
+              <p>Diploma di Perito Informatico</p>
+              <h2 class="mt">Lingue</h2>
+              <p>Inglese – B1/B2</p>
+            </div>
+            <div class="cv-button-wrapper">
+              <a href="assets/CV/cv.html" class="cv-button">➜</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <h2>Federico Marogna</h2>
+            <p>Web Designer</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://instagram.com/federico.marogna" target="_blank" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="17" cy="7" r="1.2" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=100028134165456" target="_blank" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="2"/>
+                <path d="M15.5 7H13.5C12.67 7 12 7.67 12 8.5V10H10.5V12H12V17H14V12H15L15.5 10H14V9C14 8.72 14.22 8.5 14.5 8.5H15.5V7Z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a href="https://github.com/prodbyAFTR" target="_blank" class="social-icon" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 8C10.34 8 9 9.34 9 11C9 12.12 9.67 13.09 10.65 13.58C10.85 13.64 10.93 13.49 10.93 13.37C10.93 13.25 10.93 12.97 10.93 12.65C9.97 12.82 9.67 12.14 9.67 12.14C9.38 11.58 9 11.43 9 11.43C8.43 11.07 9.04 11.08 9.04 11.08C9.68 11.13 9.98 11.87 9.98 11.87C10.58 12.84 11.59 12.55 11.97 12.41C12.03 12.04 12.19 11.83 12.36 11.69C11.67 11.6 11 11.37 11 10.34C11 10.04 11.09 9.82 11.23 9.66C11.21 9.57 11.16 9.28 11.24 8.88C11.24 8.88 11.53 8.81 12.93 9.6C13.19 9.54 13.45 9.52 13.71 9.52C13.97 9.52 14.23 9.54 14.49 9.6C15.89 8.81 16.18 8.88 16.18 8.88C16.26 9.28 16.21 9.57 16.19 9.66C16.33 9.82 16.41 10.04 16.41 10.34C16.41 11.37 15.74 11.6 15.05 11.69C15.25 11.85 15.41 12.12 15.41 12.5C15.41 13.01 15.4 13.41 15.4 13.37C15.4 13.49 15.47 13.65 15.68 13.58C16.65 13.09 17.33 12.12 17.33 11C17.33 9.34 15.99 8 14.33 8H12Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+          <p class="footer-copy">© 2025 Federico Marogna — Tutti i diritti riservati</p>
+        </div>
+  </footer>
+</body>
+</html>
